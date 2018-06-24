@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/numgrid"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="84dp"
+        android:columnCount="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:onClick="getNum"
+            android:text="@string/_1"
+            android:textSize="30sp"
+            app:fontFamily="@font/bangers" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_2"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_3"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="60dp"
+            android:layout_rowSpan="1"
+            android:onClick="removeNum"
+            android:text="@string/sub"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_4"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_5"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_6"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="60dp"
+            android:layout_height="150dp"
+            android:layout_rowSpan="2"
+            android:onClick="getNum"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            app:fontFamily="@font/bangers" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_7"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_8"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="80dp"
+            app:fontFamily="@font/bangers"
+            android:text="@string/_9"
+            android:onClick="getNum"
+            android:textSize="30sp" />
+
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numgrid"
+        android:layout_alignStart="@+id/numgrid"
+        android:layout_below="@+id/numgrid"
+        android:layout_marginTop="-84dp"
+        android:text="@string/submit"
+        android:textSize="30sp"
+        android:onClick="compare"
+        app:fontFamily="@font/bangers" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="230dp"
+        android:layout_height="68dp"
+        android:layout_alignLeft="@+id/numgrid"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/numgrid"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="183dp"
+        android:gravity="center"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/qpart1"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="89dp"
+        android:gravity="end"
+        android:text="@string/qpart1"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/qsign"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/qpart1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/sign"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/qpart2"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qpart1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:gravity="start"
+        android:text="@string/qpart2"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/equals"
+        android:layout_width="58dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/numgrid"
+        android:layout_alignLeft="@+id/numgrid"
+        android:layout_marginTop="185dp"
+        android:gravity="center"
+        android:text="@string/equal"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/streak"
+        android:textSize="36sp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/streak"
+        android:layout_toStartOf="@+id/streak"
+        android:layout_toLeftOf="@+id/streak"
+        app:srcCompat="@drawable/flame" />
+
+
+</RelativeLayout>
