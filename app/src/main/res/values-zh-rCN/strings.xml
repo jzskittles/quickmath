@@ -2,6 +2,8 @@
 <resources>
     <string name="app_name">快算</string>
     <string name="submit">抢 答!</string>
-    <string name="quick_math">快算!</string>
+    <string name="quick_math">快 算!</string>
     <string name="add_sub">加 减</string>
+    <string name="add_sub2">两 个 数</string>
+    <string name="add_sub3">三 个 数</string>
 </resources>

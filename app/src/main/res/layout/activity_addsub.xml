@@ -142,42 +142,91 @@
         android:gravity="center"
         android:textSize="48sp" />
 
-    <TextView
-        android:id="@+id/qpart1"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/ans"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="89dp"
-        android:gravity="end"
-        android:text="@string/qpart1"
-        android:textSize="48sp" />
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/qsign"
-        android:layout_width="64dp"
-        android:layout_height="55dp"
-        android:layout_alignTop="@+id/qpart1"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="@string/sign"
-        android:textSize="48sp" />
+        <TextView
+            android:id="@+id/qpart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/qpart1"
+            android:visibility="gone"
+            android:textSize="48sp" />
 
-    <TextView
-        android:id="@+id/qpart2"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/qpart1"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:gravity="start"
-        android:text="@string/qpart2"
-        android:textSize="48sp" />
+        <TextView
+            android:id="@+id/qsign"
+            android:layout_width="48dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/sign"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/qpart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="start"
+            android:text="@string/qpart2"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/ans"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/q3part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/qpart1"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/q3sign"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/sign"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/q3part2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/qpart2"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/q3sign2"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="@string/sign"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/q3part3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/qpart2"
+            android:textSize="48sp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/equals"
@@ -218,8 +267,10 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/qpart1"
         android:layout_alignStart="@+id/numgrid"
+        android:layout_alignLeft="@+id/numgrid"
         android:layout_marginBottom="-89dp"
         android:layout_marginStart="-45dp"
+        android:layout_marginLeft="-45dp"
         android:visibility="gone"
         app:srcCompat="@drawable/bang" />
 

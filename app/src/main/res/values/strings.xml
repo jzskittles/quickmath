@@ -18,5 +18,7 @@
     <string name="streak">0</string>
     <string name="equal">=</string>
     <string name="quick_math">Quick Math!</string>
-    <string name="add_sub">ADDITION/SUBTRACTION 2</string>
+    <string name="add_sub">ADDITION/SUBTRACTION</string>
+    <string name="add_sub2">2 NUMBERS</string>
+    <string name="add_sub3">3 NUMBERS</string>
 </resources>

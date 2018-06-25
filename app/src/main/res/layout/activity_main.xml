@@ -8,26 +8,58 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="254dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="102dp"
+        android:gravity="center"
         android:text="@string/quick_math"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="56sp"
         app:fontFamily="@font/bangers" />
 
     <Button
-        android:id="@+id/addsub"
+        android:id="@+id/addsub2"
         style="@android:style/Widget.Holo.Button"
-        android:layout_width="220dp"
-        android:layout_height="96dp"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="155dp"
-        android:text="@string/add_sub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="146dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:background="@android:color/holo_purple"
+        android:text="@string/add_sub2"
         android:textSize="28sp"
         app:fontFamily="@font/roboto" />
+
+    <Button
+        android:id="@+id/addsub3"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/addsub2"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@android:color/holo_purple"
+        android:text="@string/add_sub3"
+        android:textSize="28sp"
+        app:fontFamily="@font/roboto" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:text="@string/add_sub"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        app:fontFamily="@font/bangers" />
 
 </RelativeLayout>
