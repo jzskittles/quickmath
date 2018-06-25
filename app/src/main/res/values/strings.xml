@@ -17,4 +17,6 @@
     <string name="qpart2">123</string>
     <string name="streak">0</string>
     <string name="equal">=</string>
+    <string name="quick_math">Quick Math!</string>
+    <string name="add_sub">ADDITION/SUBTRACTION 2</string>
 </resources>

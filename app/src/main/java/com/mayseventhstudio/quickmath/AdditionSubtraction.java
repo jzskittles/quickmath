@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,8 @@ public class AdditionSubtraction extends AppCompatActivity {
 
     TextView streak;
     int streaknum=0;
+
+    ImageView bang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,8 @@ public class AdditionSubtraction extends AppCompatActivity {
         sign = (TextView) findViewById(R.id.qsign);
 
         streak = (TextView) findViewById(R.id.streak);
+
+        bang = (ImageView) findViewById(R.id.bang);
 
         generateNums();
 
@@ -101,6 +106,9 @@ public class AdditionSubtraction extends AppCompatActivity {
         streak.setText(streaknum+"");
         answer="";
         ans.setText(answer);
+        if(streaknum==5){
+            bang.setVisibility(View.VISIBLE);
+        }
         generateNums();
     }
 

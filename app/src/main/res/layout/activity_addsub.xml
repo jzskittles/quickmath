@@ -17,6 +17,7 @@
         <Button
             android:id="@+id/b1"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             android:onClick="getNum"
             android:text="@string/_1"
             android:textSize="30sp"
@@ -25,6 +26,7 @@
         <Button
             android:id="@+id/b2"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_2"
             android:onClick="getNum"
@@ -33,6 +35,7 @@
         <Button
             android:id="@+id/b3"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_3"
             android:onClick="getNum"
@@ -40,17 +43,17 @@
 
         <Button
             android:id="@+id/remove"
-            android:layout_width="60dp"
-            android:layout_rowSpan="1"
+            android:layout_width="55dp"
+            android:layout_height="70dp"
             android:onClick="removeNum"
             android:text="@string/sub"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/b4"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_4"
             android:onClick="getNum"
@@ -59,6 +62,7 @@
         <Button
             android:id="@+id/b5"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_5"
             android:onClick="getNum"
@@ -67,6 +71,7 @@
         <Button
             android:id="@+id/b6"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_6"
             android:onClick="getNum"
@@ -74,8 +79,8 @@
 
         <Button
             android:id="@+id/b0"
-            android:layout_width="60dp"
-            android:layout_height="150dp"
+            android:layout_width="55dp"
+            android:layout_height="140dp"
             android:layout_rowSpan="2"
             android:onClick="getNum"
             android:text="@string/_0"
@@ -86,6 +91,7 @@
             android:id="@+id/b7"
             android:layout_width="80dp"
             app:fontFamily="@font/bangers"
+            android:layout_height="70dp"
             android:text="@string/_7"
             android:onClick="getNum"
             android:textSize="30sp" />
@@ -93,6 +99,7 @@
         <Button
             android:id="@+id/b8"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_8"
             android:onClick="getNum"
@@ -101,6 +108,7 @@
         <Button
             android:id="@+id/b9"
             android:layout_width="80dp"
+            android:layout_height="70dp"
             app:fontFamily="@font/bangers"
             android:text="@string/_9"
             android:onClick="getNum"
@@ -118,6 +126,7 @@
         android:layout_alignStart="@+id/numgrid"
         android:layout_below="@+id/numgrid"
         android:layout_marginTop="-84dp"
+        android:background="@android:color/holo_red_dark"
         android:text="@string/submit"
         android:textSize="30sp"
         android:onClick="compare"
@@ -127,12 +136,9 @@
         android:id="@+id/ans"
         android:layout_width="230dp"
         android:layout_height="68dp"
-        android:layout_alignLeft="@+id/numgrid"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/numgrid"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="183dp"
+        android:layout_above="@+id/numgrid"
+        android:layout_toEndOf="@+id/equals"
+        android:layout_toRightOf="@+id/equals"
         android:gravity="center"
         android:textSize="48sp" />
 
@@ -177,10 +183,9 @@
         android:id="@+id/equals"
         android:layout_width="58dp"
         android:layout_height="67dp"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/numgrid"
         android:layout_alignStart="@+id/numgrid"
         android:layout_alignLeft="@+id/numgrid"
-        android:layout_marginTop="185dp"
         android:gravity="center"
         android:text="@string/equal"
         android:textSize="48sp" />
@@ -199,13 +204,24 @@
         android:textSize="36sp"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/flame"
         android:layout_width="49dp"
         android:layout_height="51dp"
         android:layout_alignTop="@+id/streak"
-        android:layout_toStartOf="@+id/streak"
         android:layout_toLeftOf="@+id/streak"
+        android:layout_toStartOf="@+id/streak"
         app:srcCompat="@drawable/flame" />
+
+    <ImageView
+        android:id="@+id/bang"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qpart1"
+        android:layout_alignStart="@+id/numgrid"
+        android:layout_marginBottom="-89dp"
+        android:layout_marginStart="-45dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/bang" />
 
 
 </RelativeLayout>
