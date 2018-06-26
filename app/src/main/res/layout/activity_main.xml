@@ -18,36 +18,39 @@
         android:textSize="56sp"
         app:fontFamily="@font/bangers" />
 
-    <Button
-        android:id="@+id/addsub2"
-        style="@android:style/Widget.Holo.Button"
-        android:layout_width="166dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="146dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
-        android:background="@android:color/holo_purple"
-        android:text="@string/add_sub2"
-        android:textSize="28sp"
-        app:fontFamily="@font/roboto" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/addsub3"
-        style="@android:style/Widget.Holo.Button"
-        android:layout_width="166dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/addsub2"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:background="@android:color/holo_purple"
-        android:text="@string/add_sub3"
-        android:textSize="28sp"
-        app:fontFamily="@font/roboto" />
+        <Button
+            android:id="@+id/addsub2"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_purple"
+            android:padding="5dp"
+            android:text="@string/add_sub2"
+            android:textSize="24sp"
+            app:fontFamily="@font/roboto" />
+
+        <Button
+            android:id="@+id/addsub3"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_purple"
+            android:padding="5dp"
+            android:text="@string/add_sub3"
+            android:textSize="24sp"
+            app:fontFamily="@font/roboto" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
@@ -56,6 +59,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="230dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/add_sub"
         android:textColor="@android:color/holo_blue_dark"

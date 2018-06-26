@@ -159,9 +159,9 @@ public class AdditionSubtraction extends AppCompatActivity {
         }else{
             q3sign2.setText("-");
             if(c>result){
-                Toast.makeText(getApplicationContext(),"Negative!",Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(),result+"",Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(),c+"",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Negative!",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),result+"",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),c+"",Toast.LENGTH_SHORT).show();
                 q3sign2.setText("+");
                 result = result + c;
 
